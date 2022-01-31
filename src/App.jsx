@@ -1,7 +1,9 @@
+import Container from "./components/UI/Container"
+
 function App() {
 
   return (
-    <div className="container">
+    <Container>
       <div className="sidebar">
         Sidebar
       </div>
@@ -37,7 +39,7 @@ function App() {
       <footer className="footer">
         Footer 
       </footer>
-    </div>
+    </Container>
   )
 }
 
