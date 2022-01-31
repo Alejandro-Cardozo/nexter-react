@@ -1,3 +1,4 @@
+import Features from "./components/Features"
 import Container from "./components/UI/Container"
 
 function App() {
@@ -16,9 +17,7 @@ function App() {
         Top 3 realtors
       </div>
 
-      <div className="features">
-        Features
-      </div>
+      <Features />
 
       <div className="story__pictures">
         Story pictures
