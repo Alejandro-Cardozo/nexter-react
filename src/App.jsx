@@ -1,5 +1,6 @@
 import Features from "./components/Features"
 import StoryContent from "./components/StoryContent"
+import StoryPictures from "./components/StoryPictures"
 import Container from "./components/UI/Container"
 
 function App() {
@@ -20,9 +21,7 @@ function App() {
 
       <Features />
 
-      <div className="story__pictures">
-        Story pictures
-      </div>
+      <StoryPictures />
 
       <StoryContent />
 
