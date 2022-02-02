@@ -1,4 +1,5 @@
 import Features from "./components/Features"
+import StoryContent from "./components/StoryContent"
 import Container from "./components/UI/Container"
 
 function App() {
@@ -23,9 +24,7 @@ function App() {
         Story pictures
       </div>
 
-      <div className="story__content">
-        Story content
-      </div>
+      <StoryContent />
 
       <section className="homes">
         Homes
