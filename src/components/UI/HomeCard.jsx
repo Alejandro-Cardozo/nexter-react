@@ -6,27 +6,27 @@ const HomeCard = ({ info }) => {
   return (
     <div className='home'>
       <img src={info.img} alt={`House ${info.id}`} className='home__img' />
-      <HeartFull className='home__like' />
+      <HeartFull className='home__like' viewBox="0 0 32 32" />
       <h5 className='home__name'>{info.name}</h5>
       <div className='home__location'>
-        <MapPin />
+        <MapPin viewBox="0 0 32 32" />
         <p>{info.location}</p>
       </div>
       <div className='home__rooms'>
-        <ProfileMale />
+        <ProfileMale viewBox="0 0 32 32" />
         <p>{info.rooms} rooms</p>
       </div>
       <div className='home__area'>
-        <Expand />
+        <Expand viewBox="0 0 32 32" />
         <p>
           {info.area} m<sup>2</sup>
         </p>
       </div>
       <div className='home__price'>
-        <Key />
+        <Key viewBox="0 0 32 32" />
         <p>$ {info.price}</p>
       </div>
-      <button className='cta'>Contact realtor</button>
+      <button className='btn home__btn'>Contact realtor</button>
     </div>
   );
 };
