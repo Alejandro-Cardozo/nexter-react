@@ -1,6 +1,7 @@
 import Features from "./components/Features"
 import StoryContent from "./components/StoryContent"
 import StoryPictures from "./components/StoryPictures"
+import Homes from "./components/Homes"
 import Container from "./components/UI/Container"
 
 function App() {
@@ -25,9 +26,7 @@ function App() {
 
       <StoryContent />
 
-      <section className="homes">
-        Homes
-      </section>
+      <Homes />
 
       <section className="gallery">
         Gallery
