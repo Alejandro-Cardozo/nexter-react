@@ -3,6 +3,7 @@ import StoryContent from "./components/StoryContent"
 import StoryPictures from "./components/StoryPictures"
 import Homes from "./components/Homes"
 import Container from "./components/UI/Container"
+import Gallery from "./components/Gallery"
 
 function App() {
 
@@ -28,9 +29,7 @@ function App() {
 
       <Homes />
 
-      <section className="gallery">
-        Gallery
-      </section>
+      <Gallery />
 
       <footer className="footer">
         Footer 
