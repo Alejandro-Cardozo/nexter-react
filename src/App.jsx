@@ -7,6 +7,7 @@ import Gallery from "./components/Gallery"
 import Footer from "./components/UI/Footer"
 import Sidebar from "./components/UI/Sidebar"
 import Header from "./components/UI/Header"
+import Realtors from "./components/Realtors"
 
 function App() {
 
@@ -16,9 +17,7 @@ function App() {
 
       <Header />
 
-      <div className="realtors">
-        Top 3 realtors
-      </div>
+      <Realtors />
 
       <Features />
 

@@ -14,7 +14,7 @@ function Features() {
       <div className='feature'>
         <Global className='feature__icon' />
         <h4 className='heading-4 heading-4--dark'>World's best luxury homes</h4>
-        <p className='feature_text'>
+        <p className='feature__text'>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error sint a
           porro, beatae accusantium ipsa?
         </p>
@@ -22,7 +22,7 @@ function Features() {
       <div className='feature'>
         <Trophy className='feature__icon' />
         <h4 className='heading-4 heading-4--dark'>Only the best properties</h4>
-        <p className='feature_text'>
+        <p className='feature__text'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sit
           illo sint qui nihil voluptates.
         </p>
@@ -30,7 +30,7 @@ function Features() {
       <div className='feature'>
         <MapPin className='feature__icon' />
         <h4 className='heading-4 heading-4--dark'>All homes in top locations</h4>
-        <p className='feature_text'>
+        <p className='feature__text'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
           blanditiis fugit, fugiat quis labore explicabo!
         </p>
@@ -38,7 +38,7 @@ function Features() {
       <div className='feature'>
         <Key className='feature__icon' />
         <h4 className='heading-4 heading-4--dark'>New Home in one week</h4>
-        <p className='feature_text'>
+        <p className='feature__text'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
           nisi. Ea explicabo suscipit ipsam est.
         </p>
@@ -46,7 +46,7 @@ function Features() {
       <div className='feature'>
         <Presentation className='feature__icon' />
         <h4 className='heading-4 heading-4--dark'>Top 1% realtors</h4>
-        <p className='feature_text'>
+        <p className='feature__text'>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, dolore
           doloribus? Explicabo adipisci ipsa quibusdam.
         </p>
@@ -54,7 +54,7 @@ function Features() {
       <div className='feature'>
         <Lock className='feature__icon' />
         <h4 className='heading-4 heading-4--dark'>Secure payments on nexter</h4>
-        <p className='feature_text'>
+        <p className='feature__text'>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi quasi
           impedit deserunt quisquam molestias repudiandae?
         </p>
