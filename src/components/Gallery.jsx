@@ -1,12 +1,14 @@
 import React from 'react';
-import image1 from '../img/gal-1.jpeg';
+import { galleryImages } from '../data';
 
 const Gallery = () => {
   return (
     <section className='gallery'>
-      <figure className='gallery__item gallery__item--1'>
-        <img src={image1} alt='Gallery image 1' className='gallery__img' />
-      </figure>
+      {galleryImages.map((image) => (
+        <figure className={`gallery__item ${image.class}`}>
+          <img src={image.img} alt={image.name} className='gallery__img' />
+        </figure>
+      ))}
     </section>
   );
 };
