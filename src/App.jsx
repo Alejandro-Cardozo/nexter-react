@@ -5,14 +5,13 @@ import Homes from "./components/Homes"
 import Container from "./components/UI/Container"
 import Gallery from "./components/Gallery"
 import Footer from "./components/UI/Footer"
+import Sidebar from "./components/UI/Sidebar"
 
 function App() {
 
   return (
     <Container>
-      <div className="sidebar">
-        Sidebar
-      </div>
+      <Sidebar />
 
       <header className="header">
         Header
