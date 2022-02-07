@@ -2,7 +2,6 @@ import React from 'react';
 import { Expand, HeartFull, Key, MapPin, ProfileMale } from './Icons';
 
 const HomeCard = ({ info }) => {
-  console.log(info);
   return (
     <div className='home'>
       <img src={info.img} alt={`House ${info.id}`} className='home__img' />
