@@ -9,7 +9,7 @@ const Realtors = () => {
     <div className="realtors__list">
       <img src={realtor1} alt="Realtor 1" className="realtors__img" />
       <div className="realtors__details">
-        <h4 className="heading-4 heading-4--light">Forrest Gump</h4>
+        <h4 className="heading-4 heading-4--light">Dan Taylor</h4>
         <p className="realtors__sold">245 houses sold</p>
       </div>
       <img src={realtor2} alt="Realtor 2" className="realtors__img" />
