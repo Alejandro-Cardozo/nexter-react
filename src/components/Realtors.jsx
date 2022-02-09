@@ -1,29 +1,35 @@
 import React from 'react';
-import realtor1 from '../img/realtor-1.jpeg'
-import realtor2 from '../img/realtor-2.jpeg'
-import realtor3 from '../img/realtor-3.jpeg'
+import { realtors } from '../data';
+
+const Realtor = ({ img, name, sales, index }) => {
+  return (
+    <>
+      <img src={img} alt={`Realtor ${index}`} className='realtors__img' />
+      <div className='realtors__details'>
+        <h4 className='heading-4 heading-4--light'>{name}</h4>
+        <p className='realtors__sold'>{sales} houses sold</p>
+      </div>
+    </>
+  );
+};
 
 const Realtors = () => {
-  return <div className='realtors'>
-    <h3 className="heading-3">Top 3 Realtors</h3>
-    <div className="realtors__list">
-      <img src={realtor1} alt="Realtor 1" className="realtors__img" />
-      <div className="realtors__details">
-        <h4 className="heading-4 heading-4--light">Dan Taylor</h4>
-        <p className="realtors__sold">245 houses sold</p>
-      </div>
-      <img src={realtor2} alt="Realtor 2" className="realtors__img" />
-      <div className="realtors__details">
-        <h4 className="heading-4 heading-4--light">Jenny Curran</h4>
-        <p className="realtors__sold">212 houses sold</p>
-      </div>
-      <img src={realtor3} alt="Realtor 3" className="realtors__img" />
-      <div className="realtors__details">
-        <h4 className="heading-4 heading-4--light">Benjamin Buford</h4>
-        <p className="realtors__sold">198 houses sold</p>
+  return (
+    <div className='realtors'>
+      <h3 className='heading-3'>Top 3 Realtors</h3>
+      <div className='realtors__list'>
+        {realtors.map((realtor, i) => (
+          <Realtor
+            img={realtor.img}
+            name={realtor.name}
+            sales={realtor.sales}
+            key={realtor.id}
+            index={i}
+          />
+        ))}
       </div>
     </div>
-  </div>;
+  );
 };
 
 export default Realtors;

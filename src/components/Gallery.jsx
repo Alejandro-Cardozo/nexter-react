@@ -5,7 +5,7 @@ const Gallery = () => {
   return (
     <section className='gallery'>
       {galleryImages.map((image) => (
-        <figure className={`gallery__item ${image.class}`}>
+        <figure key={image.id} className={`gallery__item ${image.class}`}>
           <img src={image.img} alt={image.name} className='gallery__img' />
         </figure>
       ))}

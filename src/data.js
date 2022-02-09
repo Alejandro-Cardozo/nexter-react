@@ -1,4 +1,3 @@
-
 import house1 from './img/house-1.jpeg';
 import house2 from './img/house-2.jpeg';
 import house3 from './img/house-3.jpeg';
@@ -20,8 +19,10 @@ import image11 from './img/gal-11.jpeg';
 import image12 from './img/gal-12.jpeg';
 import image13 from './img/gal-13.jpeg';
 import image14 from './img/gal-14.jpeg';
-;
 
+import realtor1 from './img/realtor-1.jpeg';
+import realtor2 from './img/realtor-2.jpeg';
+import realtor3 from './img/realtor-3.jpeg';
 
 export const housesInfo = [
   {
@@ -78,7 +79,6 @@ export const housesInfo = [
     price: 600000,
     img: house6,
   },
-
 ];
 
 export const galleryImages = [
@@ -158,7 +158,7 @@ export const galleryImages = [
     id: 23,
     name: 'Gallery image 13',
     class: 'gallery__item--13',
-    img: image3,
+    img: image13,
   },
   {
     id: 24,
@@ -166,5 +166,25 @@ export const galleryImages = [
     class: 'gallery__item--14',
     img: image14,
   },
+];
 
+export const realtors = [
+  {
+    id: 25,
+    name: 'Dan Taylor',
+    sales: 245,
+    img: realtor1,
+  },
+  {
+    id: 26,
+    name: 'Jenny Curran',
+    sales: 212,
+    img: realtor2,
+  },
+  {
+    id: 27,
+    name: 'Benjamin Buford',
+    sales: 198,
+    img: realtor3,
+  },
 ];
