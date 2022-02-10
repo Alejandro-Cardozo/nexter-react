@@ -5,12 +5,12 @@ import {
   Lock,
   Trophy,
   Presentation,
-  MapPin
+  MapPin,
 } from '../components/UI/Icons';
 
 function Features() {
   return (
-    <div className='features'>
+    <div className='features' id='features'>
       <div className='feature'>
         <Global className='feature__icon' />
         <h4 className='heading-4 heading-4--dark'>World's best luxury homes</h4>
@@ -29,7 +29,9 @@ function Features() {
       </div>
       <div className='feature'>
         <MapPin className='feature__icon' />
-        <h4 className='heading-4 heading-4--dark'>All homes in top locations</h4>
+        <h4 className='heading-4 heading-4--dark'>
+          All homes in top locations
+        </h4>
         <p className='feature__text'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
           blanditiis fugit, fugiat quis labore explicabo!

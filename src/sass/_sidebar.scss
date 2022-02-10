@@ -1,42 +1,51 @@
 .sidebar {
   background-color: $color-primary;
-  grid-column: sidebar-start / sidebar-end;
+  grid-column: 1 / sidebar-end;
   grid-row: 1 / -1;
 
   display: flex;
-  justify-content: center;
 
   @media only screen and (max-width: $bp-large) {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     justify-content: flex-end;
     align-items: center;
+    position: relative;
   }
 }
-
 .nav-btn {
   border: none;
   border-radius: 0;
-
-  background-color: #fff;
-  height: 2px;
-  width: 4.5rem;
+  background-color: transparent;
+  position: fixed;
+  z-index: 100;
+  cursor: pointer;
   margin-top: 4rem;
+  margin-left: 1.5rem;
+  width: 4.5rem;
+  height: 5rem;
 
-  &::before,
-  &::after {
+  &__icon {
     background-color: #fff;
+
     height: 2px;
     width: 4.5rem;
-    content: '';
-    display: block;
-  }
 
-  &::before {
-    transform: translateY(-1.5rem);
-  }
-  &::after {
-    transform: translateY(1.3rem);
+    &::before,
+    &::after {
+      background-color: #fff;
+      height: 2px;
+      width: 4.5rem;
+      content: '';
+      display: block;
+    }
+
+    &::before {
+      transform: translateY(-1.5rem);
+    }
+    &::after {
+      transform: translateY(1.3rem);
+    }
   }
 
   @media only screen and (max-width: $bp-large) {
@@ -50,4 +59,68 @@
       transform: translateY(1rem);
     }
   }
+}
+
+.nav-btn--checked {
+  background-color: transparent;
+  transition: all 0.3s ease;
+  &::before {
+    top: 0;
+    transform: rotate(-315deg);
+  }
+  &::after {
+    top: 0;
+    transform: rotate(315deg);
+  }
+}
+
+.toggleMenu {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  transform: translate(-100%);
+  font-size: 2rem;
+  background-color: $color-primary;
+  z-index: 99;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.4s ease-in-out;
+
+  ul {
+    list-style: none;
+  }
+
+  &__link:link,
+  &__link:visited {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-family: $font-display;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem;
+    display: block;
+    transition: all 0.2s ease;
+  }
+
+  &__link:hover,
+  &__link:active {
+    background-color: rgba(#fff, 0.05);
+    transform: translateY(-3px);
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    margin-top: 0;
+    margin-right: 3rem;
+
+    transform: translateY(calc(-100% + 50px));
+  }
+}
+
+.visible {
+  transform: translate(0%);
 }

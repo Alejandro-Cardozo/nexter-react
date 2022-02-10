@@ -4,9 +4,9 @@ import HomeCard from './UI/HomeCard';
 
 const Homes = () => {
   return (
-    <section className='homes'>
+    <section className='homes' id='properties'>
       {housesInfo.map((house) => (
-        <HomeCard info={house} key={house.id}/>
+        <HomeCard info={house} key={house.id} />
       ))}
     </section>
   );
