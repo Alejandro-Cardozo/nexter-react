@@ -8,9 +8,9 @@ const Sidebar = () => {
       <div className='sidebar'>
         <button
           onClick={() => setChecked((prev) => !prev)}
-          className={checked ? 'nav-btn nav-btn--checked' : 'nav-btn'}
+          className='nav-btn'
         >
-          <div className="nav-btn__icon"></div>
+          <div className={checked ? 'nav-btn__icon nav-btn__icon--checked' : 'nav-btn__icon'}></div>
         </button>
       </div>
       <div className={checked ? 'toggleMenu visible' : 'toggleMenu'}>

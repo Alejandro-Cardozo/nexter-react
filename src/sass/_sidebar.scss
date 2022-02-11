@@ -20,7 +20,7 @@
   position: fixed;
   z-index: 100;
   cursor: pointer;
-  margin-top: 4rem;
+  margin-top: 1rem;
   margin-left: 1.5rem;
   width: 4.5rem;
   height: 5rem;
@@ -61,7 +61,7 @@
   }
 }
 
-.nav-btn--checked {
+.nav-btn__icon--checked {
   background-color: transparent;
   transition: all 0.3s ease;
   &::before {
@@ -96,7 +96,7 @@
   &__link:link,
   &__link:visited {
     font-size: 2.4rem;
-    font-weight: 700;
+    font-weight: 400;
     color: #fff;
     text-decoration: none;
     font-family: $font-display;

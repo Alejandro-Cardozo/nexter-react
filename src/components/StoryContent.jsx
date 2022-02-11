@@ -12,7 +12,7 @@ function StoryContent() {
         numquam beatae accusamus. Animi at odio tempore itaque libero
         praesentium?
       </p>
-      <button className='btn'>Find your own home</button>
+      <button className='btn' onClick={() => window.location.href='#properties'}>Find your own home</button>
     </div>
   );
 }

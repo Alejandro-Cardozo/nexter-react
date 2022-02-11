@@ -1,7 +1,8 @@
 .features {
   grid-column: center-start / center-end;
-
+  
   margin: 15rem 0;
+  scroll-margin-top: 15rem;
 
   display: grid;
   //grid-template-columns: repeat(3,1fr);
@@ -11,6 +12,7 @@
 
   @media only screen and (max-width: $bp-medium) {
     margin: 8rem 0;
+    scroll-margin-top: 8rem;
   }
 }
 
